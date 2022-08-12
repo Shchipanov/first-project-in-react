@@ -1,9 +1,9 @@
 import React from "react";
 import Title, { TitleSize } from "/src/components/ui/title/title";
-import StarIcon from "/src/components/ui/star-icon/star-icon";
+import StarIcon from "/src/components/ui/advantage-icon/advantage-icon";
 import "./style.css";
 
-function StarCard({
+function AdventageCard({
   name, // имя кота
   about, // информация о коте
   feature, // особенность (ласковый, новенький и т.д.) CatFeature
@@ -30,4 +30,4 @@ function StarCard({
   );
 }
 
-export default StarCard;
+export default AdventageCard;
