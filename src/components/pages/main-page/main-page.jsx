@@ -1,12 +1,12 @@
 import React from "react";
 import About from "/src/components/blocks/about/about";
-// import Advantage from "/src/components/blocks/advantage-list/advantage-list";
+import AdvantagesList from "/src/components/blocks/advantage-list/advantage-list";
 
 function MainPage({ stars }) {
   return (
     <>
       <About />
-      {/* <Advantage stars={stars} /> */}
+      <AdvantagesList stars={stars} />
     </>
   );
 }
