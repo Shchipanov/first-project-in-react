@@ -3,8 +3,9 @@ import "./style.css";
 
 export const TitleSize = {
   BIG: "big",
+  MEDIUM: "medium",
   SMALL: "small",
-  DEFAULT: ""
+  EXTRA_SMALL: "extra_small"
 };
 
 function Title({ children, size }) {

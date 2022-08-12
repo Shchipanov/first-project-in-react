@@ -1,12 +1,12 @@
 import React from "react";
 import About from "/src/components/blocks/about/about";
-import AdvantagesList from "/src/components/blocks/advantages-list/advantages-list";
+import FeaturesList from "/src/components/blocks/features-list/features-list";
 
-function MainPage({ stars }) {
+function MainPage({ features }) {
   return (
     <>
       <About />
-      <AdvantagesList stars={stars} />
+      <FeaturesList features={features} />
     </>
   );
 }

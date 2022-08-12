@@ -6,7 +6,7 @@ export const CatFeature = {
   SOFT: "soft"
 };
 
-function StarIcon({ className = "", feature }) {
+function AdvantageIcon({ className = "", feature }) {
   let options;
 
   switch (feature) {
@@ -40,4 +40,4 @@ function StarIcon({ className = "", feature }) {
   ) : null;
 }
 
-export default StarIcon;
+export default AdvantageIcon;
