@@ -8,7 +8,7 @@ function Button({ children, minWidth, link, className }) {
       {...(link ? { href: link } : { as: "button", type: "button" })}
       className={className}
     >
-      <children />
+      {children}
     </StyledButton>
   );
 }
