@@ -1,6 +1,6 @@
 export const defaultTheme = {
   colorBlackForText: "#333333",
-  colorWhite: "#ffffff",  
+  colorWhite: "#ffffff",
   colorForFeature: "#E1EDCE",
   colorForFeatureNegative: "#F8DDD7",
   colorForFeatureOwner: "#88AA4D",
@@ -11,5 +11,6 @@ export const defaultTheme = {
   fontFamily: '"Inter", "Arial", sans-serif',
   fontSizeDefault: "18px",
   footerHeight: "80px",
-  pageWidth: "1280px"
+  pageWidth: "1280px",
+  indent: "20px"
 };
