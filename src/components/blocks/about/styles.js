@@ -8,7 +8,7 @@ export const StyledAbout = styled(Section)`
   padding-top: 183px;
   padding-bottom: 145px;
   padding-right: 553px;
-  background-color: ${(props) => props.theme.backgroundColorBlue};
+  background-color: ${(props) => props.theme.colorForabout};
   align-items: center;
   z-index: 1;
   flex-direction: column;
