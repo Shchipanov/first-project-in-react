@@ -13,5 +13,6 @@ export const defaultTheme = {
   footerHeight: "80px",
   pageWidth: "1280px",
   indent: "20px",
-  colorForabout: "#d8ecfe"
+  colorForabout: "#d8ecfe",
+  lineHeightDefault: 1.5
 };
