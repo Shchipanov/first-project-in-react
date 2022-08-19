@@ -1,12 +1,6 @@
 import styled from "styled-components";
-import { Section } from "/src/components/styled";
+import { Section, P } from "/src/components/styled";
 import aboutImage from "/src/assets/about.svg";
-
-export const P = styled.p`
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-`;
 
 export const StyledAbout = styled(Section)`
   position: relative;
