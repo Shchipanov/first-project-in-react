@@ -2,16 +2,16 @@ import React from "react";
 import Header from "/src/components/layout/header/header";
 import Footer from "/src/components/layout/footer/footer";
 import MainPage from "/src/components/pages/main-page/main-page";
-import "./style.css";
+import { Main } from "./styles";
 
 // Обёртка для контента страниц
 function PageWrapper({ features }) {
   return (
     <>
       <Header />
-      <main className="page-wrapper__main">
+      <Main>
         <MainPage features={features} />
-      </main>
+      </Main>
       <Footer />
     </>
   );
