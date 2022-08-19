@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <PageWrapper features={features} />
+      <PageWrapper features={features}>Контент страницы </PageWrapper>
     </>
   );
 }
