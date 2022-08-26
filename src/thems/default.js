@@ -14,5 +14,7 @@ export const defaultTheme = {
   pageWidth: "1280px",
   indent: "20px",
   colorForabout: "#d8ecfe",
-  lineHeightDefault: 1.5
+  lineHeightDefault: 1.5,
+  backgroundColorGray: "#f7f7f7",
+  headerHeight: "80px"
 };
