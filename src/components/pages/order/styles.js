@@ -1,8 +1,15 @@
 import styled from "styled-components";
 import { Section } from "/src/components/styled";
+// import {Label} from "/src/components/styled/label/label";
 import TextInput from "/src/components/ui/text-input/text-input";
 
 const leftWidth = "353px";
+
+export const PriceLabel = styled.label`
+  direction: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+`;
 
 export const StyledOrder = styled(Section)`
   position: absolute;
@@ -24,4 +31,11 @@ export const LeftColumn = styled.div`
 
 export const AddressInput = styled(TextInput)`
   margin-bottom: ${(props) => props.theme.indent};
+`;
+
+export const PriceValue = styled.span`
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
 `;
