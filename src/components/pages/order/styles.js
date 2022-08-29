@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Section } from "/src/components/styled";
 // import {Label} from "/src/components/styled/label/label";
 import TextInput from "/src/components/ui/text-input/text-input";
+import { Swiper } from "swiper/react";
 
 const leftWidth = "353px";
 
@@ -38,4 +39,16 @@ export const PriceValue = styled.span`
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 30px;
+`;
+
+export const ProductSwiper = styled(Swiper)`
+  width: 727px;
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-slide {
+    flex-shrink: 1;
+  }
 `;
