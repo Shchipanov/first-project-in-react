@@ -1,13 +1,11 @@
 import styled from "styled-components";
-import { Section } from "/src/components/styled";
-// import {Label} from "/src/components/styled/label/label";
+import { Section, Label } from "/src/components/styled";
 import TextInput from "/src/components/ui/text-input/text-input";
 import { Swiper } from "swiper/react";
 
 const leftWidth = "353px";
 
-export const PriceLabel = styled.label`
-  direction: block;
+export const PriceLabel = styled(Label)`
   font-size: 14px;
   margin-bottom: 6px;
 `;
