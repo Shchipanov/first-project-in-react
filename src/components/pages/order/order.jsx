@@ -48,7 +48,7 @@ function Order({
     Итого: ${fullPrice} руб.
     Доставка по адресу: ${address}.`);
   };
-  return (
+  return products && products.length ? (
     <StyledOrder as="form">
       <LeftColumn>
         <Panel marginBottom={20} paddingTop={24} paddingBottom={10}>
@@ -79,7 +79,11 @@ function Order({
           />
           <PriceLabel as="span">Цена</PriceLabel>
           <PriceValue value={fullPrice} />
-          <Button maxWidth onClick={handleBuyClick}>
+          <Button
+            maxWidth
+            onClick={handleBuyClick}
+            disabled={!(selectProductIds.length && address)}
+          >
             Купить
           </Button>
         </Panel>
@@ -102,6 +106,8 @@ function Order({
         ))}
       </ProductSwiper>
     </StyledOrder>
+  ) : (
+    "Продукты были слишком вкусные и их разобрали."
   );
 }
 
