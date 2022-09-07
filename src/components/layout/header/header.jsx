@@ -3,6 +3,7 @@ import Logo from "/src/components/ui/logo/logo";
 import Nav from "/src/components/layout/nav/nav";
 import { StyledSection } from "./styles";
 
+// шапка сайта
 function Header() {
   return (
     <StyledSection as="header">
