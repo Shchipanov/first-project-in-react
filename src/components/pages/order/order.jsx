@@ -31,7 +31,7 @@ function Order({
   );
   //цена покупки
   const fullPrice = selectProducts.reduce(
-    (sum, product) => (sum += product.price),
+    (summ, product) => (summ += product.price),
     0
   );
   const handleOnClickProduct = (value, index) => {

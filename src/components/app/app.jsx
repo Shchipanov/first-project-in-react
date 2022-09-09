@@ -1,15 +1,16 @@
 import React from "react";
-import PageWrapper from "/src/components/layout/page-wrapper/page-wrapper";
-import features from "/src/mocks/features";
-import { GlobalStyle } from "./styles";
-import products from "/src/mocks/products";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { AppRoute } from "/src/const";
 import MainPage from "/src/components/pages/main-page/main-page";
+import PageWrapper from "/src/components/layout/page-wrapper/page-wrapper";
 import Order from "/src/components/pages/order/order";
+import { AppRoute } from "/src/const";
+import features from "/src/mocks/features";
+import products from "/src/mocks/products";
 import ScrollTop from "/src/components/ui/scroll-top/scroll-top";
+import { GlobalStyle } from "./styles";
 
-export default function App() {
+// Корневой компонент всего приложения
+function App() {
   return (
     <>
       <GlobalStyle />
@@ -18,7 +19,6 @@ export default function App() {
         <Routes>
           <Route path={AppRoute.MAIN} element={<PageWrapper />}>
             <Route index element={<MainPage features={features} />} />
-
             <Route
               path={AppRoute.ORDER.replace(AppRoute.MAIN, "")}
               element={<Order products={products} />}
@@ -29,3 +29,5 @@ export default function App() {
     </>
   );
 }
+
+export default App;
